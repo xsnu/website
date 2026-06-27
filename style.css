@@ -1,8 +1,6 @@
-body { display: flex; flex-wrap: wrap; font-family: sans; background-color: #eeeeee; }
-header { flex-basis: 100%; flex-shrink: 0; }
+body { display: flex; flex-wrap: wrap; font-family: sans; background-image: url("images/bg.gif"); background-repeat: repeat; }
 article { flex-basis: 60%; padding-left: 1em; }
 footer { flex-basis: 100%; flex-shrink: 0; }
-header nav { display: flex; justify-content: space-between; }
 nav a, header a { text-decoration: none ; color: inherit; }
 header h1 span { margin-left: 1em; font-size: 50%; font-style: italic; }
 body > nav { flex-basis: content; padding-right: 1vw; min-width: 16em; }
@@ -10,40 +8,25 @@ nav ul { display: flex; flex-direction: column; list-style-type: none; list-styl
 nav li ul { padding-left: 0.6em }
 footer { display: flex; justify-content: space-between; }
 
-/* cut here to leave vanity behind */
-
-body { margin:0; padding: 0; font-size: 84%; font-family: Helvetica, Verdana, Arial, 'Liberation Sans', FreeSans, sans-serif; }
+body { margin:0; padding: 0; font-size: 15px; font-family: 'Times New Roman', serif; }
 a { text-decoration: none; color: }
-a:hover { text-decoration: underline; }
-.thisPage { color: black; }
 
-/* header and top bar */
-header nav { background-color: rgb(100,135,220); color: white; padding: 0.3em; border-bottom: 2px solid black; font-size: 91%; }
-header h1 { background-color: #ff6d06; color: black; margin: 0; border-bottom: 2px solid black; font-weight: normal; padding: 0.25ex; font-size: 233%; }
-header a:hover { text-decoration: none; }
-
-/* sidebar */
 body > nav { border-right: 1px solid #333333; padding: 0;  }
 body > nav > div { border-bottom: 1px solid #333333; height: 100vh;  }
 body > nav > div h2 { color: #004a99; font-weight: bold; border-bottom: 1px solid #333333; }
-body > nav > div a { color: #ff6600; text-transform: capitalize; font-weight: bold; padding: 0.25em 1ex 0.25em 2mm; font-size: 102%}
+body > nav > div a { color: #ff6600; font-weight: bold; padding: 0.25em 1ex 0.25em 2mm; font-size: 17px;}
 body > nav > div li {padding-left: 1em; }
 body > nav > div li:hover { color: white; background-color: #004a99; border-left: #333333 solid 0.2em; text-decoration: none; }
 body > nav > div p { font-weight: bold; margin: 0 0 0.5em 2mm; padding: 1em 0 0 0; }
 
-/* main copy */
-/* article { padding: 0.5ex 0 5vh 1vw;  } */
-article h1, article h2 { color: #004a99; font-weight: bold; border-bottom: 1px solid #333333; }
+article p {background: #ffffff;}
+article h1, article h2 { color: #004a99; font-weight: bold; font-style: italic;}
 article div {display: flex; align-items: center; gap: 1.2em;}
-article a { color: rgb(0,102,204); }
-article a:hover { color:  rgb(100,135,220); }
+article a { color: #ff6600; }
+article a:hover { color:  #333333; }
+#attachment {border-style: solid;}
+#title {align-items: center; font-size: 2em; gap: 0;}
 
-/* footer */
-footer { color: white; background-color: rgb(100,135,220); }
-footer a { color: inherit; }
-footer div { padding: 1em; }
-
-/* tables */
 table { border: 1px solid rgba(128,128,128,0.5); padding: 0; }
-th { color: white; background-color: rgb(100,135,220); }
+th { color: black; background-color: #ffffff; padding-left: 2em; padding-right: 2em; }
 tr:nth-child(odd) { background-color: rgba(128,128,128,0.1)  }
