@@ -19,6 +19,7 @@ header a:hover { text-decoration: none; }
 article {justify-content: center; align-items: center; text-align: center; width: 150px; margin: 0 auto;}
 article h1, article h2 { color: #004a99; font-weight: bold; font-style: italic;}
 
+/* main text */
 article a { color: #0303ee; }
 article a:hover {color: #ce1a0d;}
 #random-banner {margin-top: 0px; border: solid 0.05em;}
