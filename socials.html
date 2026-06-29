@@ -6,47 +6,63 @@
 	</head>
 
 	<body>
-		<nav id="side-bar">
-      	<div>
-					<h2>Personal</h2>
-        	<ul>
-          		<li>
-            		  	> <a href="index.html">about</a>
-          		</li>
-							<li>
-									  > <a href="blog/blog.html">blog</a>
-							</li>
-							<li>
-            			  > <a href="interests.html">interests</a>
-          		</li>
-          		<li>
-            			  > <a href="#">socials</a>
-          		</li>
-        	</ul>
-					<h2>Other</h2>
-					<ul>
-          		<li>
-            		  	> <a href="/ee">Eletrical Engineering</a>
-          		</li>
-							<li>
-									  > <a href="/vt">Vintage Technology</a>
-							</li>
-        	</ul>
+			<header>
+				<nav>
+					<div>
+						[<a href="index.html">a</a> /
+						<a href="blog/blog.html">b</a> /
+						<a href="library.html">c</a> /
+						<a href="#">d</a>]
 
-      	</div>
-    	</nav>
+						[<a href="others/ee.html">ee</a> /
+						<a href="others/vt.html">vt</a> /
+						<a href="others/vt.html">bpg</a>]
+					</div>
+				</nav>
+			</header>
 
 			<article>
-				<div>
-					<h1>GummyChan.XYZ</h1>
-					<img src="images/gummychan.png" alt="gummy">
+				<div class="banner">
+					<img id="random-banner" src="">
 				</div>
-				<div id="title">
-          <a href="#">/Socials/</a>
-        </div>
+
+				<script>
+				        // Array holding the file paths or URLs to your banners
+				        const banners = [
+				            "images/banner.png",
+				            "images/banner2.jpg",
+										"images/banner3.jpg",
+										"images/banner4.gif",
+                    "images/banner5.jpg",
+                    "images/banner6.gif",
+                    "images/banner7.gif",
+										"images/banner8.gif"
+				        ];
+
+				        // Selects a random index from the array
+				        const randomIndex = Math.floor(Math.random() * banners.length);
+
+				        // Injects the selected image URL into the placeholder image tag
+				        document.getElementById("random-banner").src = banners[randomIndex];
+				</script>
+
+				<a id="title" href="#">/d/ - Socials</a>
+				<hr>
 				<br><br>
-        <p>Discord: gazond</p>
-        <p>Github: <a href="https://github.com/xsnu">xsnu</a></p>
-			</article>
+				<section style="width: 45%;">
+					<h2>Contact</h2>
+					<div>
+		        <p>Discord: gazond</p>
+		        <p>Github: <a href="https://github.com/xsnu" target="_blank" rel="noopener noreferrer">xsnu</a></p>
+					</div>
+				</section>
+				<br>
+				<section style="width: 75%;">
+					<h2>Donate</h2>
+					<div>
+						<p>XMR: 85qNFRC2dW24CfPKDBzFP69J6TE2EsAYriL8ZyQzSfV4E5dvLKojGtCj3vCHQyg8Jn4by1rdnPVmSd7p15jPd99gN44NK7u</p>
+					</div>
+				</section>
+		</article>
 	</body>
 </html>

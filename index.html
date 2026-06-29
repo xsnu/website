@@ -6,44 +6,60 @@
 	</head>
 
 	<body>
-		<nav id="side-bar">
-      	<div>
-					<h2>Personal</h2>
-        	<ul>
-          		<li>
-            		  	> <a href="#">about</a>
-          		</li>
-							<li>
-									  > <a href="blog/blog.html">blog</a>
-							</li>
-							<li>
-            			  > <a href="interests.html">interests</a>
-          		</li>
-          		<li>
-            			  > <a href="socials.html">socials</a>
-          		</li>
-        	</ul>
-					<h2>Other</h2>
-					<ul>
-          		<li>
-            		  	> <a href="/ee">eletrical engineering</a>
-          		</li>
-							<li>
-									  > <a href="/vt">vintage technology</a>
-							</li>
-        	</ul>
+			<header>
+	    	<nav>
+	    		<div>
+	      		[<a href="#">a</a> /
+						<a href="blog/blog.html">b</a> /
+						<a href="library.html">c</a> /
+						<a href="socials.html">d</a>]
 
-      	</div>
-    	</nav>
+						[<a href="others/ee.html">ee</a> /
+						<a href="others/vt.html">vt</a> /
+						<a href="others/vt.html">bpg</a>]
+					</div>
+	    	</nav>
+			</header>
 
 			<article>
-				<div>
-					<h1>GummyChan.XYZ</h1>
-					<img src="images/gummychan.png" alt="gummy">
+				<div class="banner">
+					<img id="random-banner" src="">
 				</div>
-				<p>I'm Gazond and this is my personal website where I share some stuff about myself, and also other topics that I find cool.</p>
-				<p>You can check out my <a href="blog/blog.html">blog</a>, and other subjects on the navigation bar.</p>
-				<img id="attachment" src="images/stallman.gif" alt="stallman">
+
+				<script>
+				        // Array holding the file paths or URLs to your banners
+				        const banners = [
+				            "images/banner.png",
+				            "images/banner2.jpg",
+										"images/banner3.jpg",
+										"images/banner4.gif",
+                    "images/banner5.jpg",
+                    "images/banner6.gif",
+                    "images/banner7.gif",
+										"images/banner8.gif"
+				        ];
+
+				        // Selects a random index from the array
+				        const randomIndex = Math.floor(Math.random() * banners.length);
+
+				        // Injects the selected image URL into the placeholder image tag
+				        document.getElementById("random-banner").src = banners[randomIndex];
+				</script>
+
+				<a id="title" href="#">/a/ - About</a>
+				<hr>
+				<br><br>
+				<section>
+					<h2>What is GummyChan?</h2>
+					<div>
+						<p>I'm Gazond and this is my personal website where I share some stuff about myself, and also other topics that I find cool.</p>
+						<p>You can check out my <a href="blog/blog.html">blog</a>, and other subjects on the navigation bar.</p>
+					</div>
+				</section>
+				<br>
+				<img id="attachment" src="images/stallman.gif">
+
+				<br><br>
 			</article>
 	</body>
 </html>

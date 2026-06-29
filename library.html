@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GummyChan.XYZ</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div>
+					[<a href="index.html">a</a> /
+					<a href="blog/blog.html">b</a> /
+					<a href="#">c</a> /
+					<a href="socials.html">d</a>]
+
+					[<a href="others/ee.html">ee</a> /
+					<a href="others/vt.html">vt</a> /
+					<a href="others/vt.html">bpg</a>]
+				</div>
+			</nav>
+		</header>
+
+			<article>
+				<div class="banner">
+					<img id="random-banner" src="">
+				</div>
+
+				<script>
+				        // Array holding the file paths or URLs to your banners
+				        const banners = [
+				            "images/banner.png",
+				            "images/banner2.jpg",
+										"images/banner3.jpg",
+										"images/banner4.gif",
+                    "images/banner5.jpg",
+                    "images/banner6.gif",
+                    "images/banner7.gif",
+										"images/banner8.gif"
+				        ];
+
+				        // Selects a random index from the array
+				        const randomIndex = Math.floor(Math.random() * banners.length);
+
+				        // Injects the selected image URL into the placeholder image tag
+				        document.getElementById("random-banner").src = banners[randomIndex];
+				</script>
+
+        <a id="title" href="#">/c/ - Library</a>
+				<hr>
+				<br><br>
+				<section>
+					<h2>Books</h2>
+					<div>
+						<p>'<a href="https://web.cs.ucdavis.edu/~rogaway/classes/188/materials/Industrial%20Society%20and%20Its%20Future.pdf" target="_blank" rel="noopener noreferrer">Industrial Society and Its Future</a>' by Ted Kaczynski, 1995.</p>
+						<p>'<a href="https://theanarchistlibrary.org/library/ted-kaczynski-the-truth-about-primitive-life-a-critique-of-anarchoprimitivism.pdf" target="_blank" rel="noopener noreferrer">The Truth About Primitive Life: A Critique of Anarchoprimitivism</a>' by by Ted Kaczynski, 2008.</p>
+						<p>'<a href="https://www.youtube.com/watch?v=ITG3WljvLqY" target="_blank" rel="noopener noreferrer">The Truth About Primitive Life: Critique of Anarcho-Primitivism Audiobook</a>' by by Ted Kaczynski, 2008</p>
+						<br>
+						<p>'<a href="https://www.gutenberg.org/cache/epub/1998/pg1998-images.html" target="_blank" rel="noopener noreferrer">Thus Spake Zarathustra: A Book for All and None</a>' by Friedrich Nietzsche, 1883</p>
+				</section>
+				<a style="color: black;">All media listed here is publicly available</a>
+			</article>
+	</body>
+</html>
