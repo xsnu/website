@@ -6,54 +6,63 @@
 	</head>
 
 	<body>
-		<nav id="side-bar">
-      	<div>
-					<h2>Personal</h2>
-        	<ul>
-          		<li>
-            		  	> <a href="../index.html">about</a>
-          		</li>
-							<li>
-									  > <a href="#">blog</a>
-							</li>
-							<li>
-            			  > <a href="../interests.html">interests</a>
-          		</li>
-          		<li>
-            			  > <a href="../socials.html">socials</a>
-          		</li>
-        	</ul>
-					<h2>Other</h2>
-					<ul>
-          		<li>
-            		  	> <a href="/ee">Eletrical Engineering</a>
-          		</li>
-							<li>
-									  > <a href="/vt">Vintage Technology</a>
-							</li>
-        	</ul>
+			<header>
+				<nav>
+					<div>
+						[<a href="../index.html">a</a> /
+						<a href="#">b</a> /
+						<a href="../library.html">c</a> /
+						<a href="../socials.html">d</a>]
 
-      	</div>
-    	</nav>
+						[<a href="../others/ee.html">ee</a> /
+						<a href="../others/vt.html">vt</a> /
+						<a href="../others/vt.html">bpg</a>]
+					</div>
+				</nav>
+			</header>
 
 			<article>
-				<div>
-					<h1>GummyChan.XYZ</h1>
-					<img src="../images/gummychan.png" alt="gummy">
+				<div class="banner">
+					<img id="random-banner" src="">
 				</div>
-				<div id="title">
-          <a href="#">/Blog/</a>
-        </div>
-				<br><br>
-				<table>
-          <tr>
-            <th>Date</th>
-            <th>Name</th>
-          </tr>
-          <tr>
-            <th>06/24/2026</th>
-            <th><a href="blog1.html">my first blog post</a></th>
-        </table>
+
+				<script>
+				        // Array holding the file paths or URLs to your banners
+				        const banners = [
+				            "../images/banner.png",
+				            "../images/banner2.jpg",
+										"../images/banner3.jpg",
+										"../images/banner4.gif",
+                    "../images/banner5.jpg",
+                    "../images/banner6.gif",
+                    "../images/banner7.gif",
+										"../images/banner8.gif"
+				        ];
+
+				        // Selects a random index from the array
+				        const randomIndex = Math.floor(Math.random() * banners.length);
+
+				        // Injects the selected image URL into the placeholder image tag
+				        document.getElementById("random-banner").src = banners[randomIndex];
+				</script>
+
+
+				<a id="title" href="#">/b/ - Blog</a>
+				<hr>
+				<br>
+				<div id="blog">
+					<table>
+	          <tr id="col-title">
+	            <th>Creator</th>
+	            <th>Title</th>
+							<th>Date</th>
+	          </tr>
+	          <tr id="col-elements">
+	            <th>Gazond</th>
+	            <th><a href="blog1.html">Female Evilness</a></th>
+							<th>06/24/2026</th>
+	        </table>
+				</div>
 			</article>
 	</body>
 </html>
